@@ -14,3 +14,44 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+	.buttons{
+		width: 18vh;
+		height: 18vh;
+	}
+	.seleccionado{
+		display: inline-block;
+		width: 50%;
+		padding: 5px;
+		text-align: center;
+
+	}
+	.compartido{
+		display: inline-block;
+		width: 50%;
+		padding: 5px;
+		text-align: center;
+
+	}
+	.split-pane-md.split-pane-visible > .split-pane-side{
+		min-width: 340px; 
+	}
+.compartido:before {
+    content: "";
+    background-color: #ffffff6b;
+    border-radius: 50%;
+    height: 18vh;
+    position: absolute;
+    width: 18vh;
+}
+	.etiqueta{
+		    display: block;
+		    font-size: 80%;
+	}
+	ion-label{
+		text-overflow:clip;
+		margin: 0px !important;
+	}
+.item-md.item-block .item-inner{
+	border-bottom: 0;
+	padding: 10px;
+}

@@ -1,14 +1,86 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Uztul
     </ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<!--   <ion-list>   
+    <ion-item>
+      <ion-label floating>Topico</ion-label>
+      <ion-input type="text" [(ngModel)]="topic" ></ion-input>
+   </ion-item>
+   <ion-item *ngIf="topic">
+      <ion-label floating >Message</ion-label>
+      <ion-input type="text" [(ngModel)]="publishM" ></ion-input>
+   </ion-item>
+   <ion-item  text-center>
+    <button *ngIf="publishM" ion-button large (click)="publish(topic,publishM)" >Publicar </button>
+    <button ion-button large (click)="subscribe(topic)" >subscribe</button>
+   </ion-item>
+  </ion-list>
+  <ion-list margin-top>
+      <ion-card *ngFor="let data of messageArray" text-center>
+        <ion-card-content>{{data}}</ion-card-content>
+      </ion-card>
+  </ion-list> -->
+
+<!--  <ion-grid>
+    <ion-row class="halfHeight">
+      <ion-col text-center col-20>
+        <div class="divTop">
+            <ion-img class="buttons" src="img/iluminacionBtn.png" (click)="iluminacion()"></ion-img>
+            <label class="etiquetas">
+              Ilumminacióna
+            </label>
+        </div>          
+      </ion-col>
+      <ion-col text-center col-20>
+             <div class="divTop">
+            <ion-img class="buttons" src="img/tvBtn.png" ></ion-img>
+            <label class="etiquetas">
+              Tv
+            </label>
+        </div> 
+      </ion-col>
+      <ion-col text-center col-20>
+           <div class="divTop">
+            <ion-img class="buttons" src="img/temperaturaBtn.png" ></ion-img>
+            <label class="etiquetas">
+              Temperatura
+            </label>
+          </div>
+      </ion-col>
+    </ion-row> 
+    <ion-row text-center class="halgHeight">
+      <ion-col col-20>
+             <div class="divBottom">
+            <ion-img class="buttons" src="img/relojBtn.png" ></ion-img>
+            <label class="etiquetas">
+                  Alarmas
+            </label>
+          </div>
+        
+      </ion-col>
+        <ion-col text-center col-20>
+          <div class="divBottom">
+            <ion-img class="buttons" src="img/ventanasBtn.png" ></ion-img>
+            <label class="etiquetas">
+                  Ventanas
+            </label>
+          </div>           
+      </ion-col>
+      <ion-col text-center col-20>
+          <div class="divBottom">
+            <ion-img class="buttons" src="img/puertaBtn.png" ></ion-img>
+            <label class="etiquetas">
+                  Puerta
+            </label>
+          </div>    
+            
+      </ion-col>
+    </ion-row> 
+ </ion-grid> -->
 </ion-content>

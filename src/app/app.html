@@ -1,1 +1,47 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-split-pane when="(min-width: 600px)">
+<ion-menu type="reveal" [content]="mycontent">
+  <ion-content no-padding no-margin>
+    		<ion-item text-center no-padding no-margin>
+    			<div class="seleccionado" (click)="publicar()">
+				    <img src="img/iluminacionBtn.png" class="buttons"/>
+				<!--     <label class="etiqueta">Iluminacion</label> -->
+			    </div>
+    			<div class="compartido">
+				    <img src="img/tvBtn.png" class="buttons"/>
+			     <!--   <label class="etiqueta">TV</label> -->
+			    </div>
+			</ion-item>       
+    		<ion-item text-center no-padding>
+    			<div class="compartido">
+				    <img src="img/temperaturaBtn.png" class="buttons"/>
+				  <!--   <label class="etiqueta">Temperatura</label> -->
+			    </div>
+    			<div class="compartido">
+				    <img src="img/ventanasBtn.png" class="buttons"/>
+			    <!-- 	<label class="etiqueta">Ventanas</label> -->
+			    </div> 
+			</ion-item >
+    		<ion-item text-center no-padding>
+    			<div class="compartido">
+				    <img src="img/musicBtn.png" class="buttons"/>
+				 <!--   <label class="etiqueta">Musica</label> -->
+			    </div>
+    			<div  class="compartido">
+				    <img  src="img/relojBtn.png" class="buttons"/>
+				    <!-- <label class="etiqueta">Reloj</label> -->
+			    </div>
+			</ion-item> 
+    		<ion-item text-center no-padding>
+    			<div class="compartido">
+				    <img src="img/puertaBtn.png" class="buttons"/>
+				 <!--   <label class="etiqueta">Puerta</label> -->
+			    </div>
+    			<div  class="compartido">
+				    <img  src="img/asistenciaBtn.png" class="buttons"/>
+				   <!--  <label class="etiqueta">Asistencia</label> -->
+			    </div>
+			</ion-item>    
+  </ion-content>
+</ion-menu>
+<ion-nav #mycontent [root]="rootPage"  main></ion-nav>
+</ion-split-pane>
